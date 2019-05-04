@@ -18,7 +18,7 @@ class App{
     }
 
     scrollHandle(e){
-        if(window.scrollY >= this.p.offsetTop && !this.isDrawed){
+        if(window.scrollY + window.innerHeight > this.p.offsetTop && !this.isDrawed){
             this.draw();
             this.isDrawed = true;
         }
